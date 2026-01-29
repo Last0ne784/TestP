@@ -2,10 +2,67 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Pagina informativa</title>
+  <title>Autenticazione</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #202124;
+    }
+
+    .wrapper {
+      text-align: center;
+    }
+
+    .logo {
+      margin-bottom: 32px;
+    }
+
+    .message {
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    /* Spinner */
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #e0e0e0;
+      border-top: 4px solid #1a73e8;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Messaggio</h1>
-  <p>Questa è una GitHub Page.</p>
+  <div class="wrapper">
+    <div class="logo">
+      <img
+        src="logog.png"
+        alt="Google"
+        width="180"
+      >
+    </div>
+
+    <div class="message">
+      Stai per essere reindirizzato alla pagina di autenticazione
+    </div>
+
+    <div class="spinner"></div>
+  </div>
 </body>
 </html>
