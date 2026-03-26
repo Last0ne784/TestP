@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Supporto autenticazione</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      font-family: "Segoe UI", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #323130;
+    }
+
+    .container {
+      max-width: 500px;
+      padding: 20px;
+    }
+
+    .logo {
+      margin-bottom: 30px;
+    }
+
+    .message {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .qr img {
+      width: 220px;
+      height: 220px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Logo Microsoft Authenticator -->
+    <div class="logo">
+      <img src="assets/microsoft-logo.png" alt="Microsoft Authenticator" width="180">
+    </div>
+
+    <!-- Messaggio -->
+    <div class="message">
+      Se riscontri problemi inquadra il QR Code sottostante
+    </div>
+
+    <!-- QR Code -->
+    <div class="qr">
+      <img src="assets/qr.png" alt="QR Code">
+    </div>
+
+  </div>
+</body>
+</html>
